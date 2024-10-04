@@ -220,7 +220,7 @@ select {
     color: black;
 }
 
-.perfil button {
+.perfil button{
     align-items: center;
     justify-content: right;
     width: 20%;
