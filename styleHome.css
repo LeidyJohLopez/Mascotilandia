@@ -58,9 +58,9 @@ section {
 .inicio .home .container {
     position: relative;
     border: 3px solid black;
-    margin: 20px 150px;
+    margin: 20px 100px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
@@ -116,7 +116,7 @@ section {
 .inicio .home .container .opciones .textContacto {
     position: absolute;
     top: 80%;
-    left: 70%;
+    left: 70.7%;
     font-size: 3em;
     color: white;
     --more: 5px;
@@ -130,19 +130,22 @@ section {
 }
 
 .inicio .home .container .informacion {
+    width: 150%;
+    left: 10%;
     position: relative;
     display: inline-block;
+    margin: -200px 30px 10px 30px;
     border-radius: 15px;
     border: 3px solid black;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    margin: 10px 10px 10px 10px;
     backdrop-filter: blur(15px);
 }
 
 .home .input-perfil input {
     width: 100%;
     height: 50px;
+    margin: 10px 10px 10px 10px;
     border-radius: 10px;
     border: none;
     outline: none;
