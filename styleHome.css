@@ -23,21 +23,24 @@ section {
 .home .logo {
     width: 25%;
     position: absolute;
-    margin: 20px 150px;
+    top: 5%;
+    left: 10%;
     background-position: center;
 }
 
 .home .perroCarnet {
-    width: 10%;
-    position: absolute;
-    margin: 20px 55%;
+    position: relative;
+    top: 10%;
+    left: 87%;
     background-position: center;
 }
 
 .home button {
+    position: absolute;
     width: 10%;
     height: 45px;
-    margin: 50px 100px 100px 1080px;
+    top: 24%;
+    left: 67%;
     border-radius: 10px;
     background: #F5F5F5;
     outline: none;
@@ -47,20 +50,15 @@ section {
 }
 
 .home button:hover {
-    opacity: .10;
-}
-
-.home button a {
-    text-decoration: none;
-    color: black;
+    opacity: .9;
 }
 
 .inicio .home .container {
     position: relative;
-    border: 3px solid black;
-    margin: 20px 100px;
+    width: 100%;
+    margin: 20px 140px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -91,10 +89,7 @@ section {
     --minus: calc(var(--more) * -1);
     --border-color: black;
     filter:
-        drop-shadow(var(--more) 0 0 var(--border-color)) 
-        drop-shadow(var(--minus) 0 0 var(--border-color)) 
-        drop-shadow(0 var(--more) 0 var(--border-color)) 
-        drop-shadow(0 var(--minus) 0 var(--border-color));
+        drop-shadow(var(--more) 0 0 var(--border-color)) drop-shadow(var(--minus) 0 0 var(--border-color)) drop-shadow(0 var(--more) 0 var(--border-color)) drop-shadow(0 var(--minus) 0 var(--border-color));
 }
 
 .inicio .home .container .opciones .textCitas {
@@ -107,10 +102,7 @@ section {
     --minus: calc(var(--more) * -1);
     --border-color: black;
     filter:
-        drop-shadow(var(--more) 0 0 var(--border-color)) 
-        drop-shadow(var(--minus) 0 0 var(--border-color)) 
-        drop-shadow(0 var(--more) 0 var(--border-color)) 
-        drop-shadow(0 var(--minus) 0 var(--border-color));
+        drop-shadow(var(--more) 0 0 var(--border-color)) drop-shadow(var(--minus) 0 0 var(--border-color)) drop-shadow(0 var(--more) 0 var(--border-color)) drop-shadow(0 var(--minus) 0 var(--border-color));
 }
 
 .inicio .home .container .opciones .textContacto {
@@ -123,35 +115,36 @@ section {
     --minus: calc(var(--more) * -1);
     --border-color: black;
     filter:
-        drop-shadow(var(--more) 0 0 var(--border-color)) 
-        drop-shadow(var(--minus) 0 0 var(--border-color)) 
-        drop-shadow(0 var(--more) 0 var(--border-color)) 
-        drop-shadow(0 var(--minus) 0 var(--border-color));
+        drop-shadow(var(--more) 0 0 var(--border-color)) drop-shadow(var(--minus) 0 0 var(--border-color)) drop-shadow(0 var(--more) 0 var(--border-color)) drop-shadow(0 var(--minus) 0 var(--border-color));
 }
 
 .inicio .home .container .informacion {
-    width: 150%;
-    left: 10%;
+    width: 30%;
+    margin: 10px 10px 10px 10px;
     position: relative;
-    display: inline-block;
-    margin: -200px 30px 10px 30px;
     border-radius: 15px;
-    border: 3px solid black;
-    justify-content: center;
+    display: inline-block;
+    justify-content: space-evenly;
     align-items: center;
     backdrop-filter: blur(15px);
+    background-color: #D5DEEF;
 }
 
-.home .input-perfil input {
-    width: 100%;
-    height: 50px;
-    margin: 10px 10px 10px 10px;
+.inicio .home .container .informacion .in {
+    margin: 20px 10px 30px 30px;
+    justify-content: space-evenly;
+}
+
+.home .input-home input {
+    width: 85%;
+    height: 65px;
+    margin: 25px 20px 15px 20px;
     border-radius: 10px;
     border: none;
     outline: none;
     text-align: center;
 }
 
-.home .input-perfil ::placeholder {
+.home .input-home ::placeholder {
     color: black;
 }
