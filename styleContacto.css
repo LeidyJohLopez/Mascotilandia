@@ -112,3 +112,17 @@ textarea {
     border: none;
     transition: .4s;
 }
+
+.contacto button {
+    position: absolute;
+    width: 10%;
+    height: 45px;
+    top: 10%;
+    left: 80%;
+    border-radius: 10px;
+    background: #F5F5F5;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: .4s;
+}
