@@ -71,7 +71,7 @@ section {
     color: black;
 }
 
-.perfil button{
+.perfil button {
     align-items: center;
     justify-content: right;
     width: 20%;
@@ -87,9 +87,4 @@ section {
 
 .perfil button:hover {
     opacity: .10;
-}
-
-.perfil button a {
-    text-decoration: none;
-    color: black;
 }
