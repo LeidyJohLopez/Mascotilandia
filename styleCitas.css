@@ -4,6 +4,7 @@
     font-family: 'Poppins';
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 section {
@@ -12,15 +13,13 @@ section {
 
 .inicio {
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
     min-height: 100vh;
 }
 
 /* Se realiza css de la clase citas */
 
-.contacto {
+.citas {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -28,101 +27,174 @@ section {
     min-height: 100vh;
 }
 
-.contacto .perroCirculo {
+.citas .gatoCitas {
     position: absolute;
-    justify-content: center;
-    width: 55%;
+    justify-content: left;
+    width: 60%;
     height: 100%;
-    margin: 50% 90% 50% 45%;
-    opacity: 0.3;
+    margin: 50% 60% 50% 45%;
 }
 
-.contacto h1 {
+.citas h1 {
     position: absolute;
     color: black;
-    text-align: left;
-    font-size: 3em;
-    margin: 50% 120% 50% 45%;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-}
-
-.contacto h2 {
-    color: black;
-    text-align: left;
-    font-size: 2em;
-}
-
-.contacto .facebook {
-    position: absolute;
-    width: 50%;
-    margin: -20% 0% 0% 15%;
-}
-
-.contacto .instagram {
-    position: absolute;
-    width: 50%;
-    margin: -10% 0% 0% 15%;
-}
-
-.contacto .x {
-    position: absolute;
-    width: 50%;
-    margin: 0% 0% 0% 15%;
-}
-
-.contacto .youtube {
-    position: absolute;
-    width: 50%;
-    margin: 10% 0% 0% 15%;
-}
-
-.contacto .imgFace,
-.imginsta,
-.imgX,
-.imgyoutube {
-    position: absolute;
-    top: -15%;
-    left: -10%;
-}
-
-.contacto .logo {
-    position: absolute;
-    width: 30%;
-    top: 70%;
-    left: 60%;
-}
-
-
-.contacto input,
-textarea {
-    border-radius: 5px;
-    background: #F5F5F5;
-    cursor: pointer;
-    border: none;
-}
-
-.contacto .btn-enviar {
-    border-radius: 10px;
-    background: #F5F5F5;
-    width: 70px;
-    height: 45px;
-    outline: none;
-    cursor: pointer;
-    border: none;
-    transition: .4s;
-}
-
-.contacto button {
-    position: absolute;
-    width: 10%;
-    height: 45px;
+    font-size: 4em;
     top: 10%;
-    left: 80%;
+    left: 10%;
+}
+
+.citas .fecha-citas {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.citas .fecha-citas .fecha {
+    position: relative;
+    border-radius: 10px;
+    background: #F5F5F5;
+    text-align: center;
+    width: 200%;
+    height: 45px;
+    margin: 0% 0% 15% 0%;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: .4s;
+}
+
+.citas .fecha-citas .hora {
+    position: relative;
+    border-radius: 10px;
+    background: #F5F5F5;
+    text-align: center;
+    width: 200%;
+    height: 45px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    transition: .4s;
+}
+
+.inicio .citas .necesidad {
+    position: absolute;
+    border-radius: 10px;
+    width: 25%;
+    height: 180px;
+    top: 50%;
+    left: 10%;
+    background-color: #F5F5F5;
+}
+
+.inicio .citas .necesidad .title-necesidad {
+    position: relative;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    background-color: #8FAADC;
+}
+
+.inicio .citas .necesidad .lista .bano,
+.consulta,
+.cirugia {
+    position: relative;
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    justify-content: stretch;
+    align-items: center;
+    background-color: #F5F5F5;
+}
+
+.citas h2 {
+    color: black;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.citas .btn-citas {
+    position: absolute;
+    width: 40%;
+    top: 80%;
+    left: 10%;
+}
+
+.citas button {
+    position: relative;
+    width: 30%;
+    height: 45px;
     border-radius: 10px;
     background: #F5F5F5;
     outline: none;
     cursor: pointer;
     border: none;
     transition: .4s;
+}
+
+.citas button:hover {
+    opacity: .10;
+}
+
+.citas button a {
+    text-decoration: none;
+    color: black;
+}
+
+.calendario {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.inicio .calendario .container-citas {
+    position: absolute;
+    border-radius: 10px;
+    width: 24%;
+    height: 485px;
+    top: 10%;
+    left: 65%;
+    background-color: #F5F5F5;
+}
+
+.inicio .calendario .container-citas .tabla {
+    position: relative;
+    border: solid 2px #8FAADC;
+    margin: 20px 20px 20px 20px;
+}
+
+.calendario table {
+    color: black;
+    text-align: center;
+    font-size: 1em;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.calendario thead {
+    background: #8FAADC;
+}
+
+.calendario th {
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: #8FAADC;
+}
+
+.calendario td {
+    padding: 15px;
+    border-bottom: #8FAADC;
+}
+
+.calendario tbody tr {
+    cursor: pointer;
+}
+
+.calendario tbody tr:hover {
+    background: #D5DEEF;
+}
+
+.calendario .logo {
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 65%;
+    left: 55%;
 }
